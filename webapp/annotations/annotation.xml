@@ -17,7 +17,7 @@
                 <Annotation Term="UI.SelectionFields">
                     <Collection>
                         <PropertyPath>City</PropertyPath>
-                        <PropertyPath>PostCode</PropertyPath>
+
                     </Collection>
                 </Annotation>
             </Annotations>
