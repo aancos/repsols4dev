@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
+
+specVersion: "3.1"
+metadata:
+  name: clientes00
+type: application
+builder:
+  resources:
+    excludes:
+      - /test/**
+      - /localService/**
+  customTasks:
+    - name: deploy-to-abap
+      afterTask: generateCachebusterInfo
+      configuration:
+        target:
+          destination: Repsol
+          url: http://antonio:3300
+        app:
+          name: ZANTONIO
+          description: Prueba Antonio
+          package: ZS4DEV_00_BES
+          transport: S4DK900219
+        exclude:
+          - /test/
